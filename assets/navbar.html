@@ -1,0 +1,111 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <a class="navbar-brand mr-4" href="./index.html">
+    <img src="./images/Algebra-logo.png" alt="algebra logo" height="35" class="d-inline-block align-top">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item d-flex align-items-center mr-4">
+        <img src="./images/navigation/about.png" class="navbar-icon-size mr-1" alt="about icon">
+        <a class="nav-link" href="../o_nama.html">O nama</a>
+      </li>
+      <li class="nav-item d-flex align-items-center mr-4">
+        <img src="./images/navigation/news.png" class="navbar-icon-size mr-1" alt="news icon" >
+        <a class="nav-link" href="../novosti.html">Novosti</a>
+      </li>
+      <li class="nav-item d-flex align-items-center mr-4">
+        <img src="./images/navigation/curriculum.png" class="navbar-icon-size mr-1" alt="curriculum icon">
+        <a class="nav-link" href="./nastavni_plan.html">Nastavni plan</a>
+      </li>
+      <li class="nav-item d-flex align-items-center">
+        <img src="./images/navigation/contact.png" class="navbar-icon-size mr-1" alt="contact icon">
+        <a class="nav-link" href="#modalContactForm" data-toggle="modal" data-target="#modalContactForm">Kontakt</a>
+      </li>
+      <li class="nav-item d-flex align-items-center ml-4" id="loginLink">
+          <a class="nav-link" href="../login.html">Prijavi se</a>
+          <img src="./images/navigation/1832638.png" alt="signup icon" width="25px" height="25px" class="ml-1">
+        </li>
+      <li class="nav-item d-flex align-items-center ml-4" id="logoutLink">
+        <img src="./images/navigation/1832638.png" alt="signup icon" width="25px" height="25px" class="ml-1">
+        <a class="nav-link" href="#" id="logout">Odjavi se</a>
+      </li>
+      <li class="nav-item dropdown d-lg-none">
+        <!-- Use the 'd-lg-none' class to hide the dropdown on screens larger than the lg breakpoint -->
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- modal contact form which pops up-->
+<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-left">
+
+        <!-- title -->
+        <h4 class="modal-title w-100 font-weight-bold">
+          <img src="./images/navigation/contact.png" class="navbar-icon-size" alt="contact icon">
+          Kontaktirajte nas
+        </h4>
+        <!-- close button -->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body mx-3">
+        <form action="https://www.fulek.com/mvc/supit/project-contact-form" method="POST">
+
+          <!-- input name -->
+          <div class="md-form mb-2">
+            <label data-error="wrong" data-success="right" for="name">Puno ime</label>
+            <input type="text" name="FullName" id="name" class="form-control validate" autocomplete="name">
+          </div>
+
+          <!-- input e-mail -->
+          <div class="md-form mb-2">
+            <label data-error="wrong" data-success="right" for="email">E-mail</label>
+            <input type="email" name="Email" id="email" class="form-control validate" autocomplete="email">
+          </div>
+
+          <!-- select importance -->
+          <div class="md-form mb-2">
+            <label for="importance">Važnost poruke</label>
+            <select class="form-control" name="Importance" id="importance">
+              <option value="niska">Niska</option>
+              <option value="visoka">Visoka</option>
+            </select>
+          </div>
+
+          <!-- input message -->
+          <div class="md-form mb-2">
+            <label data-error="wrong" data-success="right" for="message">Poruka</label>
+            <textarea type="text" name="Message" id="message" class="md-textarea form-control" rows="4"></textarea>
+          </div>
+
+          <!-- checkbox for newsletter -->
+          <div class="md-form mb-2">
+            <label data-error="wrong" data-success="right" for="newsletter">Želim primiti obavijesti</label>
+            <input type="checkbox" name="ReceiveNewsletter" id="newsletter" class="form-check-input" value="true">
+          </div>
+                   
+          <div class="modal-footer d-flex justify-content-center">
+          <button class="btn btn-unique">Pošalji</button>
+          <div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+ 

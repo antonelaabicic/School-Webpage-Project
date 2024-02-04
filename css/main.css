@@ -1,0 +1,394 @@
+:root{
+    --gradient: linear-gradient(0deg, rgba(226,114,16,1) 0%, rgba(196,15,97,1) 100%);
+    --yellow-color: #a8990c;
+    --white-color: #fee;
+    --black-color: #222;
+    --pink-color: #c40f61;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* main to fills all the available space between header and footer */
+main{
+    flex: 1;
+}
+
+/* NAVBAR - bootstrap */
+.navbar {
+    background-color: var(--black-color) !important;
+}
+
+.nav-link, navbar-toggler-icon {
+    color: var(--white-color) !important;
+    font-size: 1rem !important;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.navbar-nav .nav-link:hover{
+    text-decoration: underline;
+}
+
+ .navbar-toggler {
+    background: var(--gradient) !important;
+}
+
+/* NAVBAR - custom */ 
+.navbar-icon-size{
+    width: 20px;
+    height: 20px;
+}
+
+/*FOOTER*/
+footer{
+    background: url("../images/zaiskri-bg.jpg");
+    padding: 13px;
+    text-align: center;
+    margin-top: auto; /* push footer to the bottom */
+    background-size: cover;
+}
+
+footer p{
+    font-size: 2.5rem;
+    color: var(--white-color);
+    -webkit-text-stroke: 1px var(--black-color); /* adds stroke around letters */
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0px;
+}
+
+footer span{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 6px;
+    -webkit-text-stroke: 0.5px var(--black-color);
+
+    background: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    filter: drop-shadow(2px 2px 2px var(--black-color));
+}
+
+/* MODAL CONTACT FORM - bootstrap */
+label{
+    font-weight: 700;
+    font-size: 1.35em;
+}
+
+.btn-unique{
+    color: var(--white-color);
+    background-color: #007BFF;
+    font-weight: 500;
+    font-size: 1.7em;
+}
+
+/* label checkbox*/
+.form-check{
+    padding-left: 0;
+}
+
+/* checkbox*/
+.form-check-input{
+    margin-left: 7px;
+}
+
+/* LOGIN, REGISTRATION - bootstrap */
+.fw-normal{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+form p{
+    font-size: 1.3em;
+    font-weight: 450;
+}
+
+/* .container1{
+    flex: 1;
+
+    width:100%;
+} */
+
+.form-control-lg{
+    font-size: 1.5em;
+}
+
+/* NASTAVNI PLAN */
+/* .container{
+    flex: 1;
+    width:100%;
+} */
+
+.container .form-group label{
+    font-size: 1.2rem;
+}
+
+table{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* O NAMA */
+.custom-border-heading{
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 2rem;
+    border-bottom: 3px solid transparent;
+    border-image: var(--gradient);
+    border-image-slice: 1;
+    width: 60%;
+    padding-bottom: 1rem;
+}
+
+.campus-picture-size{
+    width:100%;
+    height: 35vh;
+    object-fit: cover;
+    object-position: 50% 45%; /* horizontal and vertical */
+}
+
+.paragraph-fancy{
+    font-family: 'Alex Brush', cursive;
+    font-family: 'Caveat', cursive;
+    font-size: 1.7rem;
+    background-color: #f8eaed;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+/* side navigation*/
+#sidebar a{
+    background-color: white;
+    border-color: var(--pink-color);
+    border-radius: 10px 0 0 10px; /* round edges */
+    border-style: solid;
+    border-width: 4px 0px 4px 4px;
+    color: var(--pink-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 7px;
+    position: fixed;
+    right: -205px; /* move sidebar all to the right*/
+    text-align: left;
+    text-decoration: none; /*no underline for link*/
+    transition: 0.4s;
+    width: 250px;
+    z-index: 2;
+}
+
+.sidebar-icon-size{
+    width: 30px;
+    height: 30px;
+}
+
+#sidebar a:hover {
+    right: 0;
+}
+
+/* where to position sidenav */
+#values { top: 210px; }
+#history { top: 270px; }
+#organization { top: 330px; }
+#location { top: 390px; }
+
+/* when I click on sidebar content i want to see my titles*/
+#vrijednosti, #povijest, #algebraGrupa, #lokacija{
+    scroll-margin-top: 7rem;
+} 
+
+/* pink letters */
+.pink-letters{
+    color: var(--pink-color);
+    font-size: 1.55rem;
+    font-weight: 700;
+}
+
+/* cards */
+.custom-card h5{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.custom-card p{
+    font-size: 1.1rem;
+}
+
+/* content on top of background*/
+.bg-image{
+    position: relative;
+    z-index: 1;
+    padding: 4rem;
+}
+
+/* background*/
+.bg-image::before{
+    background-size: cover;
+    background: url('../images/about/backgroundLokacija.png');
+    content: "";
+    inset: 0;
+    opacity: 0.3;
+    position: absolute;
+    z-index: -1;
+}
+
+.iframe-size{
+    width: 80%;
+    height: 80vh;
+    border: 5px solid black;
+}
+
+/* NOVOSTI */
+
+/* .custom-background{
+    background-color: #f8eaed;
+    padding-top: 23px;
+    padding-bottom: 23px;
+} */
+
+.custom-card-circle{
+    color: white;
+    text-decoration: none;
+    height: 300px; 
+    width: 300px; 
+    overflow: hidden;
+    text-align: center;
+    border: 20px solid whitesmoke;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.custom-card-circle:hover{
+    color:  white;
+    text-decoration: none;
+}
+
+.custom-card-circle img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60%; /* horizontal */
+}
+
+.heading-picture-size{
+    width:100%;
+    height: 35vh;
+    object-fit: cover;
+    object-position: 50% 5%; /* horizontal and vertical */
+}
+
+.normal-paragraph{
+    font-size: 1.1rem;
+}
+
+.textbox-img-header{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*  centers horizontally and vertically within container*/
+    width: 80%;
+    color: white;
+    text-align: left;
+    font-size: 2.1rem;
+    font-weight: 900;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.custom-picture{
+    width: 100%;
+    height: 100%;
+}
+
+/* VIDEO BG FOR TYPING ANIMATION */
+.bg-video-wrapper{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-video-wrapper video{
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: 1; /* video is below the overlay */
+}
+
+.bg-video-wrapper .overlay{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2; /* overlay is above the video */
+}
+
+/*pozicija animacije*/
+.bg-video-wrapper h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    margin: 0;
+    color: var(--white-color);
+    text-align: center;
+}
+
+/* cursor animation */
+#cursor{
+    color: var(--yellow-color);
+    font-size: 1.2em;
+    animation: blink 1.1s linear infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 992px) {
+    footer{
+        padding: 10px;
+    }
+
+    footer p {
+        font-size: 1.7rem;
+        letter-spacing: 2px;
+    }
+
+    footer span {
+        font-size: 2.5rem; 
+        letter-spacing: 4px;
+    }
+
+    .textbox-img-header{
+        font-size: 1.5rem;
+    }
+
+    .bg-image{
+        padding: 2rem;
+    }
+}
+
