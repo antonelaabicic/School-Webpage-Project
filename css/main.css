@@ -301,7 +301,7 @@ table{
     font-size: 1.1rem;
 }
 
-.img-header-kazan {
+.img-header {
     width: 100%;
     height: 37vh; 
     
@@ -309,34 +309,19 @@ table{
     flex-direction: column;
     justify-content: center;
 
-    color: white;
-    text-align: center;
-    font-size: 2.1rem;
-    font-weight: 900;
-    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
-
-    background-image: url("../images/novost1.jpg");
     background-size: cover;
     background-position: 50% 20%;
 }
 
-.img-header-stipendija {
-    width: 100%;
-    height: 37vh; 
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.img-header-kazan { background-image: url("../images/novost1.jpg"); }
+.img-header-stipendija { background-image: url("../images/novost2.jpg");}
 
+.white-text-header{
     color: white;
     text-align: center;
     font-size: 2.1rem;
     font-weight: 900;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
-
-    background-image: url("../images/novost2.jpg");
-    background-size: cover;
-    background-position: 50% 20%;
 }
 
 /* VIDEO BG FOR TYPING ANIMATION */
