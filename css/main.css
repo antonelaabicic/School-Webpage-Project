@@ -301,22 +301,42 @@ table{
     font-size: 1.1rem;
 }
 
-.textbox-img-header{
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%); /*  centers horizontally and vertically within container*/
-    width: 80%;
+.img-header-kazan {
+    width: 100%;
+    height: 37vh; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     color: white;
-    text-align: left;
+    text-align: center;
     font-size: 2.1rem;
     font-weight: 900;
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+
+    background-image: url("../images/novost1.jpg");
+    background-size: cover;
+    background-position: 50% 20%;
 }
 
-.custom-picture{
+.img-header-stipendija {
     width: 100%;
-    height: 100%;
+    height: 37vh; 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: white;
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 900;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+
+    background-image: url("../images/novost2.jpg");
+    background-size: cover;
+    background-position: 50% 20%;
 }
 
 /* VIDEO BG FOR TYPING ANIMATION */
@@ -383,8 +403,8 @@ table{
         letter-spacing: 4px;
     }
 
-    .textbox-img-header{
-        font-size: 1.5rem;
+    .img-header-stipendija, .img-header-kazan {
+        font-size: 1.7rem;
     }
 
     .bg-image{
