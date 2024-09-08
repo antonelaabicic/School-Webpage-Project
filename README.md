@@ -1,5 +1,5 @@
 <p align="center">
-    This project involves creating a responsive website for **Algebra University College**.  
+    This project involves creating a responsive website for <strong>Algebra University College</strong>.  
 </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -25,6 +25,7 @@ Additionally, the project emphasizes an attractive design that includes backgrou
 ## Features
 - **Responsive Design**: Adapts to both desktop and mobile devices
 - **JWT Authentication**: Secure login and registration functionality using API
-- **Interactive UI**: Dynamic animations, background videos, and image galleries
 - **Course Management**: Searchable curriculum with dynamic updates
+- **Interactive UI**: Dynamic animations, background videos, and image galleries
+
 
