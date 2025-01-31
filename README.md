@@ -3,7 +3,7 @@
 </p>
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## 📌 About The Project
 
 It features a user-friendly interface with user authentication, curriculum management, and an engaging presentation of the school's history. The website is designed to adapt across both desktop and mobile devices.
 
@@ -13,7 +13,7 @@ Only logged-in users have access to the curriculum section. Upon successful logi
 
 Additionally, the project emphasizes an attractive design that includes background video animations, interactive image galleries, and smooth animations.
 
-## Built With
+## 🛠 Built With
 
 ### Languages & Frameworks
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
